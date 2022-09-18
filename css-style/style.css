@@ -1,8 +1,8 @@
 #nav-bar{
     width: 100%;
     height: 60px;
-    background-color: rgb(135, 148, 92);
-    box-shadow: 0px 10px 10px 1px rgb(85, 106, 60);
+    background-color: rgb(234, 223, 229);
+    box-shadow: 0px 5px 15px 1px rgb(171, 31, 190));
 }
 #content{
     width: 100%;
@@ -12,31 +12,41 @@
     border-radius: 20px;
     padding-left: 5px;
     padding-right: 5px;
+    background-color: rgb(242, 242, 242);
+}
+#consol{
+    background-color: rgb(139, 139, 139);
 }
 #item{
-    border: solid 1px rgb(84, 84, 84);
+    border: solid 1px rgb(251, 251, 251);
 }
-
+#details{
+    background-color: white;
+}
+#item:hover{
+    box-shadow: rgb(159, 159, 159) 0px 0px 15px;
+    position: relative;
+}
+#usd-svg{
+    margin: 5px 0px 0px 5px;
+}
 
 @media only screen and (max-width: 536px){
     #item{
         width: calc(100% - 5px);
         height: 200px;
-        background-color: aqua;
     }
 }
 @media only screen and (min-width: 537px) and (max-width: 767px){
     #item{
         width: calc(50% - 5px);
         height: 200px;
-        background-color: red
     }
 }
 @media only screen and (min-width: 768px) and (max-width:1012px){
     #item{
         width: calc(50% - 5px);
         height: 400px;
-        background-color: green;
     }
     #main{
         width: 75%;
@@ -47,7 +57,6 @@
     #item{
         width: calc(33% - 5px);
         height: 400px;
-        background: yellow;
     }
     #main{
         width: 75%; max-width: 1100px;
@@ -58,7 +67,6 @@
     #item{
         width: calc(25% - 5px);
         height: 400px;
-        background-color: pink;
 
     }
     #main{
@@ -76,7 +84,7 @@
     }
     #consol{
         width: 95%;
-        height: 8rem;
+        height: 180px;
         align-self: center;
         border-radius: 10px;
     }
@@ -101,7 +109,10 @@
     #consol{
         width: 12rem; 
         max-width: 12rem;
+        height: 500px;
         border-radius: 20px;
+        position: sticky;
+        top: 15px;
     }
     #img{
         width: 210px;
